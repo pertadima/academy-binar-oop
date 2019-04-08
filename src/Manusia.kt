@@ -13,10 +13,18 @@ class Manusia(
         )
     }
 
-    //Menampilkan abstract function dari parent class
+    //Menampilkan abstract function dari parent class (polymorphisme overriding)
     override fun bernafas(alatNafas: String) {
         this.alatNafas = alatNafas
         println("Mengambil nafas dengan menggunakan $alatNafas")
     }
 
+    //Overloading polymorphism
+    fun berjalan() {
+        println("$nama berjalan menyusuri jalan")
+    }
+
+    fun berjalan(tujuan: String) {
+        println("$nama berjalan menyusuri jalan menuju $tujuan")
+    }
 }
